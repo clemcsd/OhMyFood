@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="witdh=device-width, initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/desktop.css" />
+        <link rel="stylesheet" href="CSS/mobile.css" media="screen and (max-width: 768px)" />
+        <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <title>Ohmyfood</title>
+    </head>
+
+    <body>
+        <!--Header-->
+        <header>
+            <div class="entete">
+                    <img src="images/ohmyfood.png" alt="Logo de Ohmyfood" />
+            </div>    
+
+            <div>
+                <div class="Recherche">
+                    <i class="fas fa-map-marker-alt"></i>
+                
+                    <form action="search-city" method="POST" class="form-search">
+                    <input type="text" name="Paris, Belleville" id="Paris" placeholder="Paris, Belleville"/>
+                    </form>
+                    </div>
+            </div>
+
+            <div>
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            </div>
+            <div class="Explorer">
+                <input type="submit" name="Explorer nos restaurants" value="Explorer nos restaurants" id="bouton_Search"  />
+            </div>
+        </header>
+
+        <section>
+            <!--Fonctionnement-->
+            <div class="Fonctionnement">
+                <h2>Fonctionnement</h2>
+
+                    <nav>
+                        <ul>
+                            <li>Choisissez un restaurant</li>
+                            <li>Composez votre menu</li>
+                            <li>Dégustez au restaurant</li>
+                        </ul>
+                    </nav>
+            </div>
+            <!--Restaurants-->
+            <div class="Restaurants">
+                <h2>Restaurants</h2>
+
+                <a class="Lieux" href="#">
+                    <img class="images_restaurants" src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="La palette du goût" />
+                    <h3 class="Titre_Restaurants"><strong>La palette du goût</strong></h3>
+                    <p>Ménilmontant</p>
+                </a>
+
+                <a class="Lieux" href="#">
+                    <img class="images_restaurants" src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="La note enchantée" />
+                    <h3 class="Titre_Restaurants"><strong>La note enchantée</strong></h3>
+                    <p>Charonne</p>
+                </a>
+
+                <a class="Lieux" href="#">
+                    <img class="images_restaurants" src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="À la française" />
+                    <h3 class="Titre_Restaurants"><strong>À la française</strong></h3>
+                    <p>Cité Rouge</p>
+                </a>
+
+                <a class="Lieux" href="#">
+                    <img class="images_restaurants" src="images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Le délice des sens" />
+                    <h3 class="Titre_Restaurants"><strong>Le délice des sens</strong></h3>
+                    <p>Folie-Méricourt</p>
+                </a>
+
+            </div>
+        </section>
+
+    </body>

@@ -4,10 +4,9 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="witdh=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="css/desktop.css" />
-        <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 768px)" />
+        <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)" />
         <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
         <title>Ohmyfood</title>
     </head>
@@ -16,45 +15,57 @@
         <!--Header-->
         <header>
             <div class="entete">
-                    <img src="images/ohmyfood.png" alt="Logo de Ohmyfood" />
+                    <img class="entete__logo" src="images/ohmyfood.png" alt="Logo de Ohmyfood" />
             </div>    
 
-            <div>
-                <div class="Recherche">
-                    <i class="fas fa-map-marker-alt"></i>
-                
-                    <form action="search-city" method="POST" class="form-search">
-                    <input type="text" name="Paris, Belleville" id="Paris" placeholder="Paris, Belleville"/>
-                    </form>
-                    </div>
-            </div>
-
-            <div>
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-            </div>
-            <div class="Explorer">
-                <input type="submit" name="Explorer nos restaurants" value="Explorer nos restaurants" id="bouton_Search"  />
-            </div>
         </header>
 
-        <section>
-            <!--Fonctionnement-->
-            <div class="Fonctionnement">
-                <h2>Fonctionnement</h2>
+        <section class="Search">
 
-                    <nav>
-                        <ul>
-                            <li>Choisissez un restaurant</li>
-                            <li>Composez votre menu</li>
-                            <li>Dégustez au restaurant</li>
-                        </ul>
-                    </nav>
+            <div class="Search_Location">
+                <form>
+                    <i class="fas fa-map-marker-alt recherche_icone"></i>
+                    <p><input type="text" name="Localisation" placeholder="Paris, Belleville" /></p> 
+
+                </form>
+                    
+            </div>
+
+            <div class="Search_Booking">
+                
+                <div class="Search_Booking_content">
+                    <h1>Réservez le menu qui vous convient</h1>
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                    <a href="#" id="bouton_Search">Explorer nos restaurants</a>
+                </div>
+            </div>
+            
+
+        </section>
+        <!--Fonctionnement-->
+        <section class="Fonctionnement">
+            <h2>Fonctionnement</h2>
+            <div class="Fonction_carte_1">
+                <span>1</span>
+                <i></i>
+                <span>Choisissez un restaurant</span>
+            </div>
+            <div class="Fonction_carte_2">
+                <span>2</span>
+                <i></i>
+                <span>Composez votre menu</span>
+            </div>
+            <div class="Fonction_carte_3">
+                <span>3</span>
+                <i></i>
+                <span>Dégustez au restaurant</span>
             </div>
         </section>
+        <!--Fin Fonctionnement-->
+        <!--Restaurants-->
         <section>  
             <article>
-            <!--Restaurants-->
+            
                 <div class="Restaurants">
                     <h2>Restaurants</h2>
 
@@ -85,10 +96,11 @@
                 </div>
             </article> 
         </section>
+        <!--Fin Restaurants-->
 
         <footer>
             <div class="Bas_logo">
-                <img src="images/ohmyfood.png" alt="Logo de Ohmyfood" />
+                <h2>Ohmyfood</h2>
             </div>
             <div class="Bas_menu">
                 <nav>

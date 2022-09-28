@@ -35,7 +35,6 @@ body
     display: flex;
     flex-direction: row;
     align-items: center;
-   
     background-color: #99E2D0;
     opacity:0.7;
     font-family:'Shrikhand', Arial;
@@ -43,8 +42,8 @@ body
     position: absolute;
     width: 100%;
     height: 234%;
-    -webkit-animation: visibility 7s forwards;
-    animation: visibility 7s forwards;
+    -webkit-animation: visibility 5s forwards;
+    animation: visibility 5s forwards;
     
 }
 .Loader
@@ -302,29 +301,34 @@ a
 
 .Lieux_Descritption_Coeur
 {
-    margin-right: 33px;
-    margin-bottom: 20px;
+    cursor: pointer;
     text-decoration: none;
-    font-size: 20px;
-    text-decoration: none;
-    &_Vide {
-        position: absolute;
-        color: black;
-    }
-    &_Plein {
-        position: absolute;
-        opacity: 0;
-        transition: all 500ms ease-in-out;
-        
-    }
-        
+    margin-right: 30px;
+    margin-bottom: 23px;
 }
-
-
-.Lieux_Descritption_Coeur_Plein:active
+.Lieux_Descritption_Coeur:active .Lieux_Descritption_Coeur_Vide
 {
-    opacity: 1;
+    transform: scale(1.09);
 }
+
+.Lieux_Descritption_Coeur i
+{
+    position: absolute;
+    font-size: 22px;
+    
+
+}
+.Lieux_Descritption_Coeur i .Lieux_Descritption_Coeur_Plein
+{
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    transform: scale(0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: all 500ms;
+}
+
+
     
 /*Fin-Accueil*/
 /*Menu*/
@@ -446,6 +450,16 @@ a
 
     }
 }
+
+/*Animation coche menu*/
+@keyframes check {
+    0% {
+      transform: rotate(-270deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
 
 .Baspage
 {

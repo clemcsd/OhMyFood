@@ -6,12 +6,19 @@
         <link rel="stylesheet" href="css/desktop.css" />
         <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)" />
         <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw==" crossorigin="anonymous" referrerpolicy="no-referrer">-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9d0631b833.js" crossorigin="anonymous"></script>
         <title>Ohmyfood</title>
     </head>
 
     <body>
+
+        <section class="section">
+            <span class="Loader Loader-quart"></span>
+            <p>OhMyFood</p>
+                
+        </section>
         <!--Header-->
         <header>
             <div class="entete">
@@ -44,55 +51,101 @@
         <section class="Fonctionnement">
             <h2>Fonctionnement</h2>
             <div class="Fonction_liste">
-                <div class="Fonction_carte_1">
-                    <span>1</span>
-                    <i class="fas fa-mobile-alt"></i>
-                    <span>Choisissez un restaurant</span>
+                <div class="Fonction_carte">
+                    <span class="Fonction_number">1</span>
+                    <!--<i class="fas fa-mobile-alt Fonction_icone">--></i><i class="fa-solid fa-mobile-screen-button Fonction_icone"></i>
+                    <p>Choisissez un restaurant</p>
                 </div>
-                <div class="Fonction_carte_2">
-                    <span>2</span>
-                    <i class="fas fa-list-ul"></i>
-                    <span>Composez votre menu</span>
+                <div  class="Fonction_carte">
+                    <span class="Fonction_number">2</span>
+                    <i class="fas fa-list-ul Fonction_icone"></i>
+                    <p>Composez votre menu</p>
                 </div>
-                <div class="Fonction_carte_3">
-                    <span>3</span>
-                    <i class="fas fa-store"></i>
-                    <span>Dégustez au restaurant</span>
+                <div class="Fonction_carte">
+                    <span class="Fonction_number">3</span>
+                    <i class="fas fa-store Fonction_icone"></i>
+                    <p>Dégustez au restaurant</p>
                 </div>
             </div>
         </section>
         <!--Fin Fonctionnement-->
         <!--Restaurants-->
-        <section>  
+        <section class="Restaurants">  
             <article>
             
-                <div class="Restaurants">
+                <div class="Restaurants_Titre">
                     <h2>Restaurants</h2>
 
-                    <a class="Lieux" href="#">
-                        <img class="images_restaurants" src="restaurants/Ménilmontant.jpg" alt="La palette du goût" />
-                        <h3 class="Titre_Restaurants"><strong>La palette du goût</strong></h3>
-                        <p>Ménilmontant</p>
+                    <a class="Lieux" href="Palette.html">
+                        <div class="Lieux_photos">
+                            <p class="New">Nouveau</p>
+                            <img class="Lieux_images" src="restaurants/Ménilmontant.jpg" alt="La palette du goût" />  
+                        </div>
+                    
+                       
+                        <div class="Lieux_Description">
+                            <div class="Lieux_Description_titre">
+                                    <h3><strong>La palette du goût</strong></h3>
+                                    <p>Ménilmontant</p>
+                            </div>
+                            <div class="Lieux_Descritption_Coeur">
+                                <i class="fa-regular fa-heart Lieux_Descritption_Coeur_Vide"></i>
+                                <i class="fa-solid fa-heart Lieux_Descritption_Coeur_Plein"></i>
+                            </div>
+                                    
+                        </div>
+                    </a>
+                    
+
+                    <a class="Lieux" href="Enchantee.html">
+                        <div class="Lieux_photos">
+                            <p class="New">Nouveau</p>
+                            <img class="Lieux_images" src="restaurants/Charonne.jpg" alt="La note enchantée" />
+                        </div>
+                    
+                        <div class="Lieux_Description">
+                            <div class="Lieux_Description_titre">
+                                <h3><strong>La note enchantée</strong></h3>
+                                <p>Charonne</p>
+                            </div>
+                            <div class="Lieux_Descritption_Coeur">
+                                <i class="fa-regular fa-heart Lieux_Descritption_Coeur_Vide"></i>
+                                <i class="fa-solid fa-heart Lieux_Descritption_Coeur_Plein"></i>
+                            </div>
+                        </div>  
+                       
                     </a>
 
-                    <a class="Lieux" href="#">
-                        <img class="images_restaurants" src="restaurants/Charonne.jpg" alt="La note enchantée" />
-                        <h3 class="Titre_Restaurants"><strong>La note enchantée</strong></h3>
-                        <p>Charonne</p>
-                    </a>
+                    <a class="Lieux" href="Alafrancaise.html">
+                        <img class="Lieux_images" src="restaurants/Cité.jpg" alt="À la française" />
+                    
+                        <div class="Lieux_Description">
+                            <div class="Lieux_Description_titre">
+                                <h3 class="Lieux_titre"><strong>À la française</strong></h3>
+                                <p>Cité Rouge</p>
+                            </div>
+                            <div class="Lieux_Descritption_Coeur">
+                                <i class="fa-regular fa-heart Lieux_Descritption_Coeur_Vide"></i>
+                                <i class="fa-solid fa-heart Lieux_Descritption_Coeur_Plein"></i>
+                            </div>
+                        </div>
+                    </a>    
+                    
 
-                    <a class="Lieux" href="#">
-                        <img class="images_restaurants" src="restaurants/Cité.jpg" alt="À la française" />
-                        <h3 class="Titre_Restaurants"><strong>À la française</strong></h3>
-                        <p>Cité Rouge</p>
-                    </a>
-
-                    <a class="Lieux" href="#">
-                        <img class="images_restaurants" src="restaurants/Folie.jpg" alt="Le délice des sens" />
-                        <h3 class="Titre_Restaurants"><strong>Le délice des sens</strong></h3>
-                        <p>Folie-Méricourt</p>
-                    </a>
-
+                    <a class="Lieux" href="Delice.html">
+                        <img class="Lieux_images" src="restaurants/Folie.jpg" alt="Le délice des sens" />
+                    
+                        <div class="Lieux_Description">
+                            <div class="Lieux_Description_titre">
+                                <h3 class="Lieux_titre"><strong>Le délice des sens</strong></h3>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <div class="Lieux_Descritption_Coeur">
+                                <i class="fa-regular fa-heart Lieux_Descritption_Coeur_Vide"></i>
+                                <i class="fa-solid fa-heart Lieux_Descritption_Coeur_Plein"></i>
+                            </div>
+                        </div>
+                    </a>  
                 </div>
             </article> 
         </section>
@@ -107,7 +160,7 @@
                         <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
                         <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
                         <li><a href="#">Mentions légales</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
                     </ul>
                 </nav>
             </div>

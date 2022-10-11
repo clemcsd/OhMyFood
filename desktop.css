@@ -43,7 +43,7 @@
   }
   .Carte {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: flex-end;
     justify-content: space-around;
   }
@@ -55,14 +55,40 @@
     font-size: 30px;
     margin-top: 40px;
   }
+  .Titre .fa-heart:after {
+    content: "\f004";
+    position: relative;
+    bottom: 16px;
+    font-size: 10px;
+    right: 17px;
+    top: -6px;
+    transition: transform 500ms ease-in;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    visibility: hidden;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .Menu_liste:hover > .Menu_Bloc_icone {
+    width: 6%;
+  }
+  .Menu_Bloc_Prix {
+    margin-left: auto;
+    margin-right: 10px;
+  }
   .Entrees {
-    width: 44%;
+    width: 40%;
+    margin-right: 10px;
   }
   .Plats {
-    width: 44%;
+    width: 40%;
+    margin-right: 10px;
   }
   .Desserts {
-    width: 44%;
+    width: 40%;
+    margin-right: 10px;
   }
   .Baspage_liste {
     display: flex;

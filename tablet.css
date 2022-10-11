@@ -41,6 +41,35 @@
     font-size: 30px;
     margin-top: 40px;
   }
+  .Titre .fa-heart:after {
+    content: "\f004";
+    position: relative;
+    bottom: 16px;
+    font-size: 12px;
+    right: 20px;
+    top: -7px;
+    transition: transform 500ms ease-in;
+    display: inline-block;
+    font-weight: bold;
+    cursor: pointer;
+    visibility: hidden;
+    background: linear-gradient(to top, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .Menu_Bloc_icone {
+    right: 2%;
+  }
+  .Menu_liste:hover > .Menu_Bloc_icone {
+    width: 10%;
+  }
+  .Menu_Bloc_Prix {
+    position: absolute;
+    font-size: 13px;
+    right: 10%;
+    -webkit-transition: padding-right 700ms ease-out;
+    transition: padding-right 700ms ease-out;
+  }
 }
 
 /*# sourceMappingURL=tablet.css.map */

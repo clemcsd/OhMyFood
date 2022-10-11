@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="witdh=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel="stylesheet" href="css/desktop.css" />
-        <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 768px)" />
-        <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)" />
+        <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 993px)" />
+        <link rel="stylesheet" href="mobile.css" />
+        <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 992px)"/>
         <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw==" crossorigin="anonymous" referrerpolicy="no-referrer">-->
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/9d0631b833.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
             <i class="fas fa-arrow-left Flèche"></i>
             </a>
             <div class="entete">
-                    <img class="entete__logo" src="images/ohmyfood.png" alt="Logo de Ohmyfood" />
+                    <img class="entete_logo" src="images/ohmyfood.png" alt="Logo de Ohmyfood" />
             </div>    
 
         </header>
@@ -33,129 +33,132 @@
                 <h1>À la française</h1>
                 <i class="fa-regular fa-heart Titre_Favoris"></i>
             </div>
-            <div class="Entrees">
-                <h2>ENTRÉES</h2>
-                <div class="Menu_liste">
-                    <div class="Menu_liste_recettes">
-                        <h3>Tartare de poulpe acidulé</h3>
-                        <p>Aux zestes d'orange</p>
-                    </div>
-                    <div class="Menu_liste_Prix">
-                        <p>25€</p>
-                    </div>
-                    <!--<div class="Menu_liste_icone">
-                        <i class="fas fa-check-circle"></i>
-                    </div>-->
-                </div>
-                
-                <div class="Menu_liste">
-                    <div class="Menu_liste_recettes">
-                        <h3>Velouté de légumes d'antan</h3>
-                        <p>Carotte, panais, topinambour</p>
-                    </div>
-                    <div class="Menu_liste_Prix">
-                        <p>35€</p>
-                    </div>
-                    <!--<div class="Menu_liste_icone">
-                        <i class="fas fa-check-circle"></i>
-                    </div>-->
-                </div>
 
-                <div class="Menu_liste">
-                    <div class="Menu_liste_recettes">
-                        <h3>Soupe à l'oignon</h3>
-                        <p>Revisitée</p>
+            <div class="Carte">
+                <div class="Entrees">
+                    <h2>ENTRÉES</h2>
+                    <div class="Menu_liste">
+                        <div class="Menu_liste_recettes">
+                            <h3>Tartare de poulpe acidulé</h3>
+                            <p>Aux zestes d'orange</p>
+                        </div>
+                        <div class="Menu_Bloc_Prix">
+                            <p>25€</p>
+                        </div>  
+                        <div class="Menu_Bloc_icone">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="Menu_liste_Prix">
-                        <p>20€</p>
+                    
+                    <div class="Menu_liste">
+                        <div class="Menu_liste_recettes">
+                            <h3>Velouté de légumes d'antan</h3>
+                            <p>Carotte, panais, topinambour</p>
+                        </div>
+                        <div class="Menu_Bloc_Prix">
+                            <p>35€</p>
+                        </div>  
+                        <div class="Menu_Bloc_icone">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <!--<div class="Menu_liste_icone">
-                        <i class="fas fa-check-circle"></i>
-                    </div>-->
-                </div>
-            </div>
-            <div class="Plats">
-                <h2>PLATS</h2>
-                <div class="Menu_liste">
-                    <div class="Menu_liste_recettes">
-                        <h3>Coquilles Saint-Jacques</h3>
-                        <p>Accompagnées d'une purée de panais</p>
-                    </div>
-                    <div class="Menu_liste_Prix">
-                        <p>40€</p>
-                    </div>
-                    <!--<div class="Menu_liste_icone">
-                        <i class="fas fa-check-circle"></i>
-                    </div>-->
-                </div>
-                
-                <div class="Menu_liste">
-                    <div class="Menu_liste_recettes">
-                        <h3>Magret de canard</h3>
-                        <p>Et parmentier de pommes de terres</p>
-                    </div>
-                    <div class="Menu_liste_Prix">
-                        <p>35€</p>
-                    </div>
-                    <!--<div class="Menu_liste_icone">
-                        <i class="fas fa-check-circle"></i>
-                    </div>-->
-                </div>
 
-                <div class="Menu_liste">
-                    <div class="Menu_liste_recettes">
-                        <h3>Pigeonneau d'Ille-et-Vilaine</h3>
-                        <p>Sur son lit de gnocchis aux légumes</p>
+                    <div class="Menu_liste">
+                        <div class="Menu_liste_recettes">
+                            <h3>Soupe à l'oignon</h3>
+                            <p>Revisitée</p>
+                        </div>
+                        <div class="Menu_Bloc_Prix">
+                            <p>20€</p>
+                        </div>  
+                        <div class="Menu_Bloc_icone">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="Menu_liste_Prix">
-                        <p>44€</p>
-                    </div>
-                    <!--<div class="Menu_liste_icone">
-                        <i class="fas fa-check-circle"></i>
-                    </div>-->
                 </div>
-            </div>
-            <div class="Desserts">
-                <h2>DESSERTS</h2>
-                <div class="Menu_liste">
-                    <div class="Menu_liste_recettes">
-                        <h3>Pétales de violettes glacés</h3>
-                        <p>Et purée de noisettes</p>
+                <div class="Plats">
+                    <h2>PLATS</h2>
+                    <div class="Menu_liste">
+                        <div class="Menu_liste_recettes">
+                            <h3>Coquilles Saint-Jacques</h3>
+                            <p>Accompagnées d'une purée de panais</p>
+                        </div>
+                        <div class="Menu_Bloc_Prix">
+                            <p>40€</p>
+                        </div>  
+                        <div class="Menu_Bloc_icone">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="Menu_liste_Prix">
-                        <p>18€</p>
+                    
+                    <div class="Menu_liste">
+                        <div class="Menu_liste_recettes">
+                            <h3>Magret de canard</h3>
+                            <p>Et parmentier de pommes de terres</p>
+                        </div>
+                        <div class="Menu_Bloc_Prix">
+                            <p>35€</p>
+                        </div>  
+                        <div class="Menu_Bloc_icone">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <!--<div class="Menu_liste_icone">
-                        <i class="fas fa-check-circle"></i>
-                    </div>-->
-                </div>
-                
-                <div class="Menu_liste">
-                    <div class="Menu_liste_recettes">
-                        <h3>Fondant au chocolat</h3>
-                        <p>Revisité</p>
-                    </div>
-                    <div class="Menu_liste_Prix">
-                        <p>22€</p>
-                    </div>
-                    <!--<div class="Menu_liste_icone">
-                        <i class="fas fa-check-circle"></i>
-                    </div>-->
-                </div>
 
-                <div class="Menu_liste">
-                    <div class="Menu_liste_recettes">
-                        <h3>Millefeuille croustillant</h3>
-                        <p>Myrtilles et pâte d'amandes</p>
+                    <div class="Menu_liste">
+                        <div class="Menu_liste_recettes">
+                            <h3>Pigeonneau d'Ille-et-Vilaine</h3>
+                            <p>Sur son lit de gnocchis aux légumes</p>
+                        </div>
+                        <div class="Menu_Bloc_Prix">
+                            <p>44€</p>
+                        </div>  
+                        <div class="Menu_Bloc_icone">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
-                    <div class="Menu_liste_Prix">
-                        <p>23€</p>
-                    </div>
-                    <!--<div class="Menu_liste_icone">
-                        <i class="fas fa-check-circle"></i>
-                    </div>-->
                 </div>
-            </div>    
+                <div class="Desserts">
+                    <h2>DESSERTS</h2>
+                    <div class="Menu_liste">
+                        <div class="Menu_liste_recettes">
+                            <h3>Pétales de violettes glacés</h3>
+                            <p>Et purée de noisettes</p>
+                        </div>
+                        <div class="Menu_Bloc_Prix">
+                            <p>18€</p>
+                        </div>  
+                        <div class="Menu_Bloc_icone">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="Menu_liste">
+                        <div class="Menu_liste_recettes">
+                            <h3>Fondant au chocolat</h3>
+                            <p>Revisité</p>
+                        </div>
+                        <div class="Menu_Bloc_Prix">
+                            <p>22€</p>
+                        </div>  
+                        <div class="Menu_Bloc_icone">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+
+                    <div class="Menu_liste">
+                        <div class="Menu_liste_recettes">
+                            <h3>Millefeuille croustillant</h3>
+                            <p>Myrtilles et pâte d'amandes</p>
+                        </div>
+                        <div class="Menu_Bloc_Prix">
+                            <p>23€</p>
+                        </div>  
+                        <div class="Menu_Bloc_icone">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                    </div>
+                </div>   
+            </div> 
             <div class="Bouton">
                 <button class="Bouton_Commander">Commander</button>
             </div>

@@ -57,6 +57,9 @@
     -webkit-background-clip: text;
     background-clip: text;
   }
+  .Menu {
+    padding: 10px 20px 10px 20px;
+  }
   .Menu_Bloc_icone {
     right: 2%;
   }

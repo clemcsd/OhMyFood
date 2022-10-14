@@ -1,4 +1,15 @@
 @charset "UTF-8";
+/*Animation rotation menu*/
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -27,6 +38,15 @@
     transform: translateY(0px);
   }
 }
+/*Animation coche menu*/
+@keyframes check {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 html {
   overflow-x: hidden;
   margin: 0;
@@ -40,19 +60,31 @@ body {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*Loading Spinner*/
 .section {
   display: flex;
-  flex-direction: row;
+  left: 0%;
   align-items: center;
+  justify-content: center;
   background-color: #99E2D0;
   opacity: 0.7;
   font-family: "Shrikhand", Arial;
   font-size: 30px;
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 234%;
-  -webkit-animation: visibility 5s forwards;
-  animation: visibility 5s forwards;
+  height: 100vh;
+  -webkit-animation: visibility 3s forwards;
+  animation: visibility 3s forwards;
+  margin: auto;
+}
+
+.section p {
+  margin-left: 10px;
+  text-align: center;
 }
 
 .Loader {
@@ -61,7 +93,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  margin-right: 20px;
+  margin-right: 2px;
 }
 
 .Loader-quart {
@@ -99,10 +131,7 @@ body {
   animation: spin 2s linear infinite;
 }
 
-a {
-  text-decoration: none;
-}
-
+/*Fin Loading Spinner*/
 /*Accueil*/
 .entete {
   width: 100%;
@@ -293,7 +322,7 @@ a {
 }
 
 /*Fin-Accueil*/
-/*Menu*/
+/*Pages Menu*/
 .Flèche {
   position: absolute;
   margin-top: 24px;
@@ -313,7 +342,6 @@ a {
   border-top-left-radius: 36px;
   border-top-right-radius: 36px;
   background-color: #f6f6f6;
-  padding: 15px;
 }
 
 .Titre {
@@ -367,20 +395,28 @@ a {
   margin-bottom: 0px;
   transition-duration: 1000ms;
   -webkit-transition-duration: 1000ms;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .Menu_liste p {
   margin-top: 5px;
   transition-duration: 1000ms;
   -webkit-transition-duration: 1000ms;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 .Menu_liste_recettes {
   font-size: 13px;
+}
+
+.Menu_liste:hover > .Menu_liste_recettes > h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 183px;
+}
+
+.Menu_liste:hover > .Menu_liste_recettes > p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 183px;
 }
 
 .fa-check-circle {
@@ -401,16 +437,6 @@ a {
   visibility: visible;
 }
 
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
-  }
-  to {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-}
 .Menu_Bloc_icone .fa-check-circle {
   display: flex;
   justify-content: center;
@@ -430,8 +456,6 @@ a {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #99E2D0;
-  /*transition: all 1000ms ;
-  -webkit-transition: all 1000ms;*/
   -webkit-transition-property: width, -webkit-transform;
   transition-property: width, -webkit-transform;
   transition-property: width, transform;
@@ -487,15 +511,6 @@ a {
   background: linear-gradient(#f888d8, #995de2);
 }
 
-/*Animation coche menu*/
-@keyframes check {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
 .Baspage {
   background-color: #363535;
   color: #FFFFFF;
@@ -570,6 +585,9 @@ li a {
     right: 10%;
     -webkit-transition: padding-right 700ms ease-out;
     transition: padding-right 700ms ease-out;
+  }
+  .Menu {
+    padding: 15px;
   }
 }
 

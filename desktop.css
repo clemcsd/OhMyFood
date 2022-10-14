@@ -74,9 +74,15 @@
   .Menu_liste:hover > .Menu_Bloc_icone {
     width: 6%;
   }
+  .Menu {
+    padding: 20px 20px 190px 20px;
+  }
   .Menu_Bloc_Prix {
     margin-left: auto;
     margin-right: 10px;
+  }
+  .Carte {
+    padding-top: 50px;
   }
   .Entrees {
     width: 40%;
@@ -89,6 +95,9 @@
   .Desserts {
     width: 40%;
     margin-right: 10px;
+  }
+  .Bouton {
+    margin-top: 18px;
   }
   .Baspage_liste {
     display: flex;

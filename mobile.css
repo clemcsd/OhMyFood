@@ -10,6 +10,7 @@
     transform: rotate(0);
   }
 }
+/*Animation loading spinner*/
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -20,6 +21,7 @@
     transform: rotate(360deg);
   }
 }
+/*Animation loading spinner*/
 @-webkit-keyframes visibility {
   0% {
     visibility: visible;
@@ -28,6 +30,7 @@
     visibility: hidden;
   }
 }
+/*Animation menu*/
 @keyframes apparition {
   from {
     opacity: 0;
@@ -83,6 +86,7 @@ a {
 }
 
 .section p {
+  position: absolute;
   margin-left: 10px;
   text-align: center;
 }
@@ -168,7 +172,7 @@ a {
   align-items: center;
 }
 .Search_Booking_Button {
-  color: white;
+  color: #FFF;
   border-radius: 30px 30px 30px 30px;
   font-size: 14px;
   font-family: "Roboto", Arial;
@@ -239,7 +243,7 @@ a {
   background-color: #9356DC;
   padding: 4px 7px 4px 7px;
   margin-left: -36px;
-  color: white;
+  color: #FFF;
 }
 
 .Restaurants {
@@ -270,7 +274,7 @@ a {
 }
 .Lieux_Description_titre {
   font-weight: bold;
-  color: #000000;
+  color: #000;
   font-size: 14px;
   margin: 0px 15px 0px 15px;
 }
@@ -278,7 +282,7 @@ a {
   margin-bottom: 0px;
 }
 .Lieux_Description p {
-  color: #000000;
+  color: #000;
   font-weight: 400;
   font-size: 15px;
   margin: 2px 15px 15px 0px;
@@ -288,7 +292,7 @@ a {
   cursor: pointer;
   text-decoration: none;
   font-size: 22px;
-  color: #000000;
+  color: #000;
 }
 
 .Lieux_Descritption_Coeur:hover > .fa-heart {
@@ -327,7 +331,7 @@ a {
   position: absolute;
   margin-top: 24px;
   margin-left: 20px;
-  color: #000000;
+  color: #000;
 }
 
 .Photo_menu {
@@ -384,7 +388,7 @@ a {
   align-items: flex-end;
   justify-content: space-between;
   border-radius: 20px;
-  background-color: white;
+  background-color: #FFF;
   font-family: "Roboto", Arial;
   box-shadow: 7px 7px 7px #e7e7e7;
   padding: 1px 1px 0px 11px;
@@ -495,7 +499,7 @@ a {
 }
 
 .Bouton_Commander {
-  color: white;
+  color: #FFF;
   border-radius: 30px 30px 30px 30px;
   font-size: 13px;
   font-weight: 500;
@@ -513,7 +517,7 @@ a {
 
 .Baspage {
   background-color: #363535;
-  color: #FFFFFF;
+  color: #FFF;
   padding: 10px;
 }
 .Baspage h2 {
@@ -529,7 +533,7 @@ a {
 }
 
 li a {
-  color: #FFFFFF;
+  color: #FFF;
   font-family: "Roboto", Arial;
   font-size: 13px;
 }
@@ -545,7 +549,7 @@ li a {
   .Lieux {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #FFF;
     border-radius: 14px;
     margin-top: 15px;
     margin-left: 19px;

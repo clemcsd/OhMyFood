@@ -2,6 +2,8 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-grey: #dcd9d7;
+$color-white:#FFF;
+$color-black:#000;
 $light: lighten($color-grey, 10%);
 $light-purple: lighten($color-primary, 35%);
 
@@ -13,17 +15,17 @@ $light-purple: lighten($color-primary, 35%);
         transform:rotate(0);}
     
 }
-
+/*Animation loading spinner*/
 @-webkit-keyframes spin {
     0%{-webkit-transform: rotate(0deg); transform: rotate(0deg);}
     100%{-webkit-transform: rotate(360deg); transform: rotate(360deg);}
 }
-
+/*Animation loading spinner*/
 @-webkit-keyframes visibility {
     0% {visibility: visible;}
     100%{visibility: hidden;}
 }
-
+/*Animation menu*/
 @keyframes apparition {
     from {
         opacity: 0;
@@ -86,6 +88,7 @@ a
 }
 .section p
 {
+    position: absolute;
     margin-left: 10px;
     text-align: center;
 }
@@ -118,7 +121,7 @@ a
     right: -6px;
     border-radius: 50px;
     border: 3px solid transparent;
-    border-top-color: #FF79DA;
+    border-top-color: $color-secondary;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 1s linear infinite;  
 }
@@ -132,7 +135,7 @@ a
     right: 5px;
     border-radius: 50px;
     border: 3px solid transparent;
-    border-top-color: #9356DC;
+    border-top-color: $color-primary;
     -webkit-animation: spin 1s linear infinite;
     animation: spin 2s linear infinite; 
 }
@@ -178,7 +181,7 @@ a
     flex-direction: column;
     align-items: center;
     &_Button {
-        color: white;
+        color: $color-white;
         border-radius: 30px 30px 30px 30px;
         font-size: 14px;
         font-family:'Roboto', Arial;
@@ -254,10 +257,10 @@ a
 {
     border-radius: 50px;
     font-size: 11px;
-    background-color: #9356DC;
+    background-color: $color-primary;
     padding: 4px 7px 4px 7px;
     margin-left: -36px;
-    color: white;
+    color: $color-white;
 }
 
 .Restaurants
@@ -290,7 +293,7 @@ a
     align-items: center;
     &_titre {
         font-weight: bold;
-        color: #000000;
+        color: $color-black;
         font-size: 14px;
         margin : 0px 15px 0px 15px;
     }
@@ -298,7 +301,7 @@ a
         margin-bottom: 0px;
     }
     & p {
-        color: #000000;
+        color: $color-black;
         font-weight: 400;
         font-size: 15px;
         margin : 2px 15px 15px 0px;
@@ -310,13 +313,13 @@ a
     cursor: pointer;
     text-decoration: none;
     font-size: 22px;
-    color: #000000;
+    color: $color-black;
 }
 
 
 .Lieux_Descritption_Coeur:hover > .fa-heart
 {
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, $color-primary, $color-secondary);
     transition: all 500ms;
     -webkit-background-clip: text;
     background-clip: text;
@@ -336,7 +339,7 @@ a
                     cursor:pointer;
                     top:-4px;
                     visibility:hidden;
-                    background: linear-gradient(to top, #9356DC, #FF79DA);
+                    background: linear-gradient(to top, $color-primary, $color-secondary);
                     -webkit-background-clip: text;
                     background-clip: text;
 }
@@ -356,7 +359,7 @@ a
     position: absolute;
     margin-top: 24px;
     margin-left: 20px;
-    color:#000000;
+    color:$color-black;
 }
 
 .Photo_menu
@@ -390,7 +393,7 @@ a
 
 .Titre:hover > .fa-heart
 {
-    background: linear-gradient(to top, #9356DC, #FF79DA);
+    background: linear-gradient(to top, $color-primary, $color-secondary);
     transition: all 500ms;
     -webkit-background-clip: text;
     background-clip: text;
@@ -421,7 +424,7 @@ a
     align-items: flex-end;
     justify-content: space-between;
     border-radius: 20px;
-    background-color: white;
+    background-color: $color-white;
     font-family:'Roboto', Arial;
     box-shadow: 7px 7px 7px #e7e7e7;
     padding: 1px 1px 0px 11px;
@@ -488,7 +491,7 @@ a
     display: flex;
     justify-content: center;
     font-size: 20px;
-    color: #FFF;
+    color: $color-white;
     position: relative;
     -webkit-transition-duration: 700ms;
     transition-duration: 700ms;
@@ -549,7 +552,7 @@ a
 
 .Bouton_Commander
  {
-    color: white;
+    color: $color-white;
     border-radius: 30px 30px 30px 30px;
     font-size: 13px;
     font-weight: 500;
@@ -568,7 +571,7 @@ a
 .Baspage
 {
     background-color: #363535;
-    color: #FFFFFF;
+    color: $color-white;
     padding: 10px;
      h2
     {
@@ -589,7 +592,7 @@ a
 
 li a
 {
-    color: #FFFFFF;
+    color: $color-white;
     font-family:'Roboto', Arial;
     font-size: 13px;
 }
@@ -613,7 +616,7 @@ li a
 {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: $color-white;
     border-radius: 14px;
     margin-top: 15px;
     margin-left: 19px;
@@ -648,7 +651,7 @@ li a
                     font-weight:bold;
                     cursor:pointer;
                     visibility:hidden;
-                    background: linear-gradient(to top, #9356DC, #FF79DA);
+                    background: linear-gradient(to top, $color-primary, $color-secondary);
                     -webkit-background-clip: text;
                     background-clip: text;
 }

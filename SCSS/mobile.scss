@@ -442,11 +442,21 @@ a
         transition-duration: 1000ms;
         -webkit-transition-duration: 1000ms;
         
+        
     }
     &_recettes {
         font-size: 13px;  
     } 
 }
+.Menu_liste > .Menu_liste_recettes > p
+{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 210px;
+
+}
+
 .Menu_liste:hover > .Menu_liste_recettes > h3
 {
     overflow: hidden;
